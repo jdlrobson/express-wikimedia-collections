@@ -1,0 +1,15 @@
+{
+  "name": "express-wikimedia-collections",
+  "version": "0.9.0",
+  "description": "Provides API to update and maintain collections of pages, stored as wiki pages on a wikimedia project.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "GPL-2.0+",
+  "dependencies": {
+    "md5-hex": "^2.0.0",
+    "oauth-fetch-json": "^0.3.2"
+  }
+}
