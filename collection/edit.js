@@ -4,7 +4,7 @@ const lookup = require('./lookup');
 module.exports = function ( lang, project, collection, title, description, image, lat, lon, profile ) {
 	var collectionTitle = lookup( profile.displayName, collection );
 	var imageString = image ? '[[' + image + '|320px]]' : '';
-	var coordString = `{{#coordinates:${lat}|${lon}}}}`;
+	var coordString = `{{#coordinates:${lat}|${lon}}}`;
 	var body = [ '\'\'\'' + title + '\'\'\'', '', description, '', imageString,
 		coordString ].join( '\n' );
 
