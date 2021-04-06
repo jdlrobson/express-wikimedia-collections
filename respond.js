@@ -10,7 +10,7 @@ function respond( res, method ) {
 		var code = 500;
 		if ( msg.indexOf( 'Not logged in' ) > -1 ) {
 			code = 401;
-		} else if ( msg.indexOf( '404' ) > -1 ) {
+		} else if ( msg.indexOf( '404 Not found' ) > -1 ) {
 			code = 404;
 		}
 		res.status( code );
